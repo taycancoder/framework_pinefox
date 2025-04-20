@@ -1,0 +1,284 @@
+/* =============== Reset Básico =============== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-secondary);
+  color: var(--color-texto);
+  background-color: var(--color-blanco);
+  line-height: 1.5;
+}
+
+/* =============== Variables Globales =============== */
+:root {
+  /* Colores */
+  --color-primario: #08AD49;
+  --color-secundario: #1A1919;
+  --color-texto-claro-60: #999999;
+  --color-accent: #0CF000;
+  --color-fondo-container-oscuro: #1D1C1C;
+  --color-texto-oscuro-15: #262626;
+  --color-texto-oscuro-30: #4D4D4D;
+  --color-texto-claro-100: #FFFFFF;
+  --color-texto-claro-80: #CCCCCC;
+  --color-fondo-claro: #F5F5F7;
+  --color-boton-oscuro: #262626;
+
+  /* Tipografía */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  
+  /* Font Sizes */
+  --font-size-h1-h2: 3rem;
+  --font-size-h3-h4: 2.5rem;
+  --font-size-text: 1.2rem;
+  --font-size-subtitles: 1.8rem;
+
+  /* Font Weights */
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* Line Heights */
+  --line-height-titles: 1.2em;
+  --line-height-text: 1.5em;
+
+  /* Buttons */
+  --button-padding: 0.7rem 1.5rem;
+  --button-radius: 2rem;
+  --button-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Images */
+  --image-radius: 15px;
+
+  /* Espaciados */
+  --fluid-side-padding-min: 1.25rem;
+  --fluid-side-padding-max: 5rem;
+
+  --section-xxl-padding-min: 9.375rem;
+  --section-xxl-padding-max: 10rem; 
+  --section-xl-padding-min: 6.875rem;
+  --section-xl-padding-max: 7.5rem;
+  --section-l-padding-min: 5.625rem;
+  --section-l-padding-max: 6.25rem;
+  --section-m-padding-min: 5rem;
+  --section-m-padding-max: 5rem;
+  --section-s-padding-min: 3.75rem;
+  --section-s-padding-max: 3.75rem;
+  --section-xs-padding-min: 2.5rem;
+  --section-xs-padding-max: 2.5rem;
+  --section-xxs-padding-min: 1.5rem;
+  --section-xxs-padding-max: 1.5rem;
+  --section-header-padding-min: 1.25rem;
+  --section-header-padding-max: 1.25rem;
+
+  /* Otros */
+  --section-hero-height: 100vh;
+  --section-offset-header: 80px;
+  --section-narrow: 62.5rem;
+  --section-narrow-xs: 45rem;
+}
+
+/* =============== Estilos Base =============== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* =============== Clases de Sección/Contenedor =============== */
+.section-xxl {
+  padding-top: clamp(var(--section-xxl-padding-min), 1.087vw + 9.13rem, var(--section-xxl-padding-max));
+  padding-bottom: clamp(var(--section-xxl-padding-min), 1.087vw + 9.13rem, var(--section-xxl-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-xl {
+  padding-top: clamp(var(--section-xl-padding-min), 1.087vw + 6.63rem, var(--section-xl-padding-max));
+  padding-bottom: clamp(var(--section-xl-padding-min), 1.087vw + 6.63rem, var(--section-xl-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-l {
+  padding-top: clamp(var(--section-l-padding-min), 1.087vw + 5.38rem, var(--section-l-padding-max));
+  padding-bottom: clamp(var(--section-l-padding-min), 1.087vw + 5.38rem, var(--section-l-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-m {
+  padding-top: clamp(var(--section-m-padding-min), 0vw + 5rem, var(--section-m-padding-max));
+  padding-bottom: clamp(var(--section-m-padding-min), 0vw + 5rem, var(--section-m-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-s {
+  padding-top: clamp(var(--section-s-padding-min), 0vw + 3.75rem, var(--section-s-padding-max));
+  padding-bottom: clamp(var(--section-s-padding-min), 0vw + 3.75rem, var(--section-s-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-xs {
+  padding-top: clamp(var(--section-xs-padding-min), 0vw + 2.5rem, var(--section-xs-padding-max));
+  padding-bottom: clamp(var(--section-xs-padding-min), 0vw + 2.5rem, var(--section-xs-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-xxs {
+  padding-top: clamp(var(--section-xxs-padding-min), 0vw + 1.5rem, var(--section-xxs-padding-max));
+  padding-bottom: clamp(var(--section-xxs-padding-min), 0vw + 1.5rem, var(--section-xxs-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-header {
+  padding-top: clamp(var(--section-header-padding-min), 0vw + 1.25rem, var(--section-header-padding-max));
+  padding-bottom: clamp(var(--section-header-padding-min), 0vw + 1.25rem, var(--section-header-padding-max));
+  padding-left: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+  padding-right: clamp(var(--fluid-side-padding-min), 6.522vw + -0.217rem, var(--fluid-side-padding-max)) !important;
+}
+
+.section-hero {
+  min-height: var(--section-hero-height) !important;
+}
+
+.section-full div {
+  max-width: 100% !important;
+}
+
+.section-narrow .e-con-inner {
+  max-width: var(--section-narrow) !important;
+}
+
+.section-narrow-xs .e-con-inner {
+  max-width: var(--section-narrow-xs) !important;
+}
+
+.section-offset {
+  padding-top: calc(var(--section-offset-header) + var(--section-xxl-padding-min));
+}
+
+/* =============== Typography Styles =============== */
+.primary-pop-h1-h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1-h2);
+  line-height: var(--line-height-titles);
+}
+
+.primary-pop-h3-h4 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3-h4);
+  line-height: var(--line-height-titles);
+}
+
+.text-med {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
+}
+
+.text-peq {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
+}
+
+.subtitulos {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-subtitles);
+  line-height: var(--line-height-titles);
+}
+
+/* =============== Button Styles =============== */
+.button {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text);
+  color: var(--color-fondo-container-oscuro);
+  box-shadow: var(--button-shadow);
+  border-radius: var(--button-radius);
+  padding: var(--button-padding);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: var(--color-texto-claro-100);
+  background-color: var(--color-boton-oscuro);
+}
+
+/* =============== Image Styles =============== */
+.img-rounded {
+  border-radius: var(--image-radius);
+}
+
+/* =============== Semantic Element Styles =============== */
+h1, h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1-h2);
+  line-height: var(--line-height-titles);
+}
+
+h3, h4 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3-h4);
+  line-height: var(--line-height-titles);
+}
+
+/* =============== Media Queries para Responsividad =============== */
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.95rem;
+  }
+  .section-xxl,
+  .section-xl,
+  .section-l {
+    padding-left: var(--fluid-side-padding-min);
+    padding-right: var(--fluid-side-padding-min);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .section-xxl {
+    padding-top: calc(var(--section-xxl-padding-min) * 0.8);
+    padding-bottom: calc(var(--section-xxl-padding-min) * 0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.85rem;
+  }
+}
+
+/* =============== Clases de Utilidad (Ejemplo) =============== */
+.u-center {
+  text-align: center;
+}
+
+.u-margin-bottom {
+  margin-bottom: 1rem;
+}
