@@ -1,3 +1,4 @@
+/*este file está en wordpress, en la carpeta del tema astra-child public_html/wp-content/themes/astra-child/ */
 /* =============== Reset Básico =============== */
 *,
 *::before,
@@ -19,43 +20,14 @@ body {
   /* Colores */
   --color-primario: #08AD49;
   --color-secundario: #1A1919;
-  --color-texto-claro-60: #999999;
+  --color-texto: #999999;
   --color-accent: #0CF000;
-  --color-fondo-container-oscuro: #1D1C1C;
-  --color-texto-oscuro-15: #262626;
-  --color-texto-oscuro-30: #4D4D4D;
-  --color-texto-claro-100: #FFFFFF;
-  --color-texto-claro-80: #CCCCCC;
-  --color-fondo-claro: #F5F5F7;
-  --color-boton-oscuro: #262626;
+  --color-blanco: #FFFFFF;
+  --color-gris: #CCCCCC;
 
   /* Tipografía */
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
-  
-  /* Font Sizes */
-  --font-size-h1-h2: 3rem;
-  --font-size-h3-h4: 2.5rem;
-  --font-size-text: 1.2rem;
-  --font-size-subtitles: 1.8rem;
-
-  /* Font Weights */
-  --font-weight-bold: 700;
-  --font-weight-semibold: 600;
-  --font-weight-medium: 500;
-  --font-weight-regular: 400;
-
-  /* Line Heights */
-  --line-height-titles: 1.2em;
-  --line-height-text: 1.5em;
-
-  /* Buttons */
-  --button-padding: 0.7rem 1.5rem;
-  --button-radius: 2rem;
-  --button-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
-
-  /* Images */
-  --image-radius: 15px;
 
   /* Espaciados */
   --fluid-side-padding-min: 1.25rem;
@@ -169,80 +141,6 @@ p {
 
 .section-offset {
   padding-top: calc(var(--section-offset-header) + var(--section-xxl-padding-min));
-}
-
-/* =============== Typography Styles =============== */
-.primary-pop-h1-h2 {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-h1-h2);
-  line-height: var(--line-height-titles);
-}
-
-.primary-pop-h3-h4 {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-h3-h4);
-  line-height: var(--line-height-titles);
-}
-
-.text-med {
-  font-family: var(--font-secondary);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-text);
-  line-height: var(--line-height-text);
-}
-
-.text-peq {
-  font-family: var(--font-secondary);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-text);
-  line-height: var(--line-height-text);
-}
-
-.subtitulos {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-subtitles);
-  line-height: var(--line-height-titles);
-}
-
-/* =============== Button Styles =============== */
-.button {
-  font-family: var(--font-secondary);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-text);
-  line-height: var(--line-height-text);
-  color: var(--color-fondo-container-oscuro);
-  box-shadow: var(--button-shadow);
-  border-radius: var(--button-radius);
-  padding: var(--button-padding);
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  color: var(--color-texto-claro-100);
-  background-color: var(--color-boton-oscuro);
-}
-
-/* =============== Image Styles =============== */
-.img-rounded {
-  border-radius: var(--image-radius);
-}
-
-/* =============== Semantic Element Styles =============== */
-h1, h2 {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-h1-h2);
-  line-height: var(--line-height-titles);
-}
-
-h3, h4 {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-h3-h4);
-  line-height: var(--line-height-titles);
 }
 
 /* =============== Media Queries para Responsividad =============== */
